@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/meny">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="75dp"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fname"
+                android:layout_weight="0.5"
+                android:hint="First Name"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:inputType="text"
+                android:background="?attr/colorButtonNormal" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lname"
+                android:layout_weight="0.5"
+                android:hint="Last Name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:inputType="text"
+                android:background="?attr/colorButtonNormal" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/mail"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:hint="                     Email ID"
+            android:background="?attr/colorButtonNormal" />
+
+        <EditText
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/phone"
+            android:layout_marginTop="20dp"
+            android:hint="                  Staff&apos;s Phone Number"
+            android:layout_gravity="center_horizontal"
+            android:background="?attr/colorButtonNormal" />
+
+        <EditText
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/subject"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:hint="                       Subjects Handling"
+            android:inputType="text"
+            tools:background="?attr/colorButtonNormal" />
+
+        <EditText
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/pass"
+            android:hint="      Kindly Select a Password"
+            android:layout_marginTop="25dp"
+            android:inputType="text"
+            android:background="?attr/colorButtonNormal"
+            android:layout_marginLeft="40dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:text="Register"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:background="#f7db23"
+            android:layout_marginTop="30dp"
+            android:onClick="userReg"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="58dp"
+                android:hint="Name" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText3"
+                android:hint="Department"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Staff Name Here!"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ec5a5a" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Type of Leave"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/editText2"
+                android:layout_alignRight="@+id/textView"
+                android:layout_alignEnd="@+id/textView"
+                android:layout_marginTop="20dp"
+                android:textColor="#ec5a5a"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Reason for leave"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/editText3"
+                android:layout_alignRight="@+id/textView3"
+                android:layout_alignEnd="@+id/textView3"
+                android:layout_marginTop="10dp"
+                android:textColor="#ec5a5a" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/editText4"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Enter your reason here!"
+                android:paddingBottom="45dp"
+                android:layout_alignRight="@+id/dp"
+                android:layout_alignEnd="@+id/dp" />
+
+            <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dp"
+                android:layout_below="@+id/editText4"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="#ffe798"
+                android:contentDescription="From date" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apply Now"
+                android:id="@+id/button8"
+                android:layout_centerVertical="true"
+                android:onClick="onb8"
+                android:nestedScrollingEnabled="true"
+                android:layout_alignParentBottom="false"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/dp"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_alignStart="@+id/textView4"
+                android:layout_alignRight="@+id/textView4"
+                android:layout_alignEnd="@+id/textView4"
+                android:background="#fda0a0" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
